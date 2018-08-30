@@ -1,4 +1,16 @@
-const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz".split("");
+//Nathan's stuff
+window.addEventListener("load", () => {
+  document.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = document.getElementById('passwordLength')
+    let passwordLength = input.value
+    console.log(passwordLength);
+    let lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz".split();
+  })
+})
+
+//official answer below
+/*const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz".split("");
 const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const numbers = "0123456789".split("");
 const specialCharacters = "!#$%&()*+,-./:;<=>?@[\\]^_{|}~".split("");
@@ -46,3 +58,4 @@ function generatePassword(length) {
 function appendOutput(password) {
   document.querySelector("output").innerText = password;
 }
+*/
